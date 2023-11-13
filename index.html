@@ -19,54 +19,56 @@
 
 
 <!-- Custom styles -->
-<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="./css/main.min.css">
   <body>
     
      <!-- Шапка сайту  -->
     
       <header class="header">
-<div class="container header-container">
-        <nav class="navigation">
-        <a class="link logo" href="index.html">Web<span class="logo-text-black">Studio</span></a>
-        <ul class="list header-list">
-          <li class="item navigation-item">
-            <a class="link navigation-link active-link" href="./index.html">Студія</a>
+<div class="container header__container">
+        <nav class="header__navigation">
+        <a class="link header__logo" href="index.html">Web<span class="header__logo-black">Studio</span></a>
+        <ul class="list header__list">
+          <li class="item header__item">
+            <a class="link header__link header__active-link" href="./index.html">Студія</a>
           </li>
-          <li class="item navigation-item">
-            <a class="link navigation-link" href="./portfolio.html">Портфоліо</a>
+          <li class="item header__item">
+            <a class="link header__link" href="./portfolio.html">Портфоліо</a>
           </li>
-          <li class="item navigation-item">
-            <a class="link navigation-link" href="#">Контакти</a>
+          <li class="item header__item">
+            <a class="link header__link" href="#">Контакти</a>
           </li>
         </ul>
       </nav>
 
-      <ul class="list contact-list">
-        <li class="item contact-item">
-          <a class="link contact-link"
-          href="mailto:info@devstudio.com">
+<div class="contact">
+  <ul class="list contact__list">
+    <li class="item contact__item">
+      <a class="link contact__link"
+      href="mailto:info@devstudio.com">
+      
+      <svg class="contact__icon" width="16" height="12"> 
+                    
+        <use href="./images/sprite.svg#icon-envelope">
           
-          <svg class="icon-header" width="16" height="12"> 
-                        
-            <use href="./images/sprite.svg#icon-envelope">
-              
-            </use>
-          </svg>
-          
-          info@devstudio.com</a>
-        </li>
-        <li class="item contact-item">
-          <a class="link contact-link" href="tel:+380961111111">
-            <svg class="icon-header" width="10" height="16"> 
-                        
-              <use href="./images/sprite.svg#icon-smartphone">
-                
-              </use>
-            </svg>
+        </use>
+      </svg>
+      
+      info@devstudio.com</a>
+    </li>
+    <li class="item contact__item">
+      <a class="link contact__link" href="tel:+380961111111">
+        <svg class="contact__icon" width="10" height="16"> 
+                    
+          <use href="./images/sprite.svg#icon-smartphone">
+            
+          </use>
+        </svg>
 
-            +38 096 111 11 11</a>
-        </li>
-      </ul>
+        +38 096 111 11 11</a>
+    </li>
+  </ul>
+</div>
 </div>
     </header>
 
@@ -74,10 +76,10 @@
      <!-- Секція герой -->
      
       <section class="hero">
-<div class="container hero-container">
+<div class="container">
 
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="hero-btn btn" data-modal-open type="button" >Замовити послугу</button>
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+        <button class="hero__btn btn" data-modal-open type="button" >Замовити послугу</button>
 </div>
 <div class="backdrop is-hidden" data-modal>
   <div class="modal-wrapper">
@@ -134,15 +136,15 @@
 
 
       </section>
-     <!-- секція про нас -->
-      <section class="about ">
-<div class="container about-container">
-
-        <ul class="about-list list">
-          <li class="item about-item">
+     <!-- Секція про нас -->
+      <section class="about">
+        <div class="container">
+        
+        <ul class="about__list list">
+          <li class="about__item item ">
              
-            <div class="about-icon">
-              <svg class="about-logo" width="70" height="70"> 
+            <div class="about__icon">
+              <svg class="about__logo" width="70" height="70"> 
                         
                 <use href="./images/sprite.svg#icon-antenna">
                   
@@ -150,16 +152,16 @@
               </svg>
             </div>
 
-            <h3 class="about-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="about-text">
+            <h3 class="about__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+            <p class="about__text">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
-          <li class="item about-item">
+          <li class="item about__item">
 
-            <div class="about-icon">
-              <svg class="about-logo" width="70" height="70"> 
+            <div class="about__icon">
+              <svg class="about__logo" width="70" height="70"> 
                         
                 <use href="./images/sprite.svg#icon-clock">
                   
@@ -167,16 +169,16 @@
               </svg>
             </div>
 
-            <h3 class="about-title">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="about-text">
+            <h3 class="about__title">ПУНКТУАЛЬНІСТЬ</h3>
+            <p class="about__text">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
-          <li class="item about-item">
+          <li class="item about__item">
 
-            <div class="about-icon">
-              <svg class="about-logo" width="70" height="70"> 
+            <div class="about__icon">
+              <svg class="about__logo" width="70" height="70"> 
                         
                 <use href="./images/sprite.svg#icon-diagram">
                   
@@ -184,15 +186,15 @@
               </svg>
             </div>
 
-            <h3 class="about-title">ПЛАНУВАННЯ</h3>
-            <p class="about-text">
+            <h3 class="about__title">ПЛАНУВАННЯ</h3>
+            <p class="about__text">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li class="item about-item">
+          <li class="item about__item">
 
-            <div class="about-icon">
-              <svg class="about-logo" width="70" height="70"> 
+            <div class="about__icon">
+              <svg class="about__logo" width="70" height="70"> 
                         
                 <use href="./images/sprite.svg#icon-astronaut">
                   
@@ -200,8 +202,8 @@
               </svg>
             </div>
 
-            <h3 class="about-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="about-text">
+            <h3 class="about__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+            <p class="about__text">
               Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
             </p>
@@ -212,40 +214,40 @@
       <!-- Секція Features -->
       
       <section class="features">
-<div class="container features-container">
+<div class="container">
 
-          <h2 class="features-title">Чим ми займаємось</h2>
-        <ul class="features-list list">
-          <li class="item features-item">
-            <img class="features-img"
+          <h2 class="features__title">Чим ми займаємось</h2>
+        <ul class="features__list list">
+          <li class="features__item item">
+            <img class="features__img"
               src="./images/about-img/box1.jpg"
               alt="Робота з ноутбуком"
               width="370"
               height="294"
             />
-            <p class="features-text" >
+            <p class="features__text" >
               Десктопні додатки
             </p>
           </li>
-          <li class="item features-item">
+          <li class="item features__item">
             <img
               src="./images/about-img/box2.jpg"
               alt="робота з телефоном"
               width="370"
               height="294"
             />
-            <p class="features-text" >
+            <p class="features__text" >
               Мобільні додатки
             </p>
           </li>
-          <li class="item features-item">
+          <li class="item features__item">
             <img
               src="./images/about-img/box3.png"
               alt="робота з планшетом"
               width="370"
               height="294"
             />
-            <p class="features-text" >
+            <p class="features__text" >
               Дизайнерські рішення
             </p>
           </li>
@@ -605,13 +607,14 @@
 </div>
  </section>
 
- <section class="clients-section section">
-  <div class="client-container container">
-    <h2 class="client-title">Постійні клієнти</h2>
-    <ul class="list client-list">
-      <li class="item client-item">
-     <a class="client-link link" href="#">
-      <svg class="client-logo"  width="106" height="60">
+ <!-- Секція клієнти -->
+ <section class="clients">
+  <div class="container">
+    <h2 class="clients__title">Постійні клієнти</h2>
+    <ul class="list clients__list">
+      <li class="item clients__item">
+     <a class="clients__link link" href="#">
+      <svg class="clients__logo"  width="106" height="60">
         <use href="./images/sprite.svg#icon-logo1" > 
   
         </use>
@@ -621,9 +624,9 @@
   
       </li>
   
-      <li class="item client-item">
-        <a class="client-link" href="#">
-         <svg class="client-logo"  width="106" height="60">
+      <li class="clients__item item">
+        <a class="clients__link" href="#">
+         <svg class="clients__logo"  width="106" height="60">
            <use href="./images/sprite.svg#icon-logo2" > 
              
            </use>
@@ -633,9 +636,9 @@
      
          </li>
   
-         <li class="item client-item">
-          <a class="client-link" href="#">
-           <svg class="client-logo"  width="106" height="60">
+         <li class="clients__item item">
+          <a class="clients__link" href="#">
+           <svg class="clients__logo"  width="106" height="60">
              <use href="./images/sprite.svg#icon-logo3" > 
                
              </use>
@@ -645,27 +648,27 @@
        
            </li>
   
-           <li class="item client-item">
-            <a class="client-link" href="#">
-             <svg class="client-logo"  width="106" height="60">
+           <li class="item clients__item">
+            <a class="clients__link" href="#">
+             <svg class="clients__logo"  width="106" height="60">
                <use href="./images/sprite.svg#icon-logo4" > 
                  
                </use>
              </svg> 
             </a>   
              </li>
-             <li class="item client-item">
-              <a class="client-link" href="#">
-               <svg  class="client-logo" width="106" height="60">
+             <li class="item clients__item">
+              <a class="clients__link" href="#">
+               <svg  class="clients__logo" width="106" height="60">
                  <use href="./images/sprite.svg#icon-logo5" >
                  </use>
                </svg>
               </a>
                </li>
   
-               <li class="item client-item">
-                <a class="client-link" href="#">
-                 <svg class="client-logo"  width="106" height="60">
+               <li class="item clients__item">
+                <a class="clients__link" href="#">
+                 <svg class="clients__logo"  width="106" height="60">
                    <use href="./images/sprite.svg#icon-logo6" > 
                      
                    </use>
@@ -678,11 +681,11 @@
   </div>
  </section>
     </main>
-    <!-- підвал сайту -->
+    <!-- Підвал сайту -->
     <footer class="footer">
-    <div class="container footer-container">
+    <div class="container footer__container">
       <div class="footer-content">
-        <a class="link logo footer-logo" href="index.html">Web<span class="logo-text-white">Studio</span></a>
+        <a class="link logo footer-logo" href="index.html">Web<span class="footer__logo-white">Studio</span></a>
         <address class="address">
           <p class="main-address">м. Київ, пр-т Лесі Українки, 26</p>
           <ul class="list address-list">

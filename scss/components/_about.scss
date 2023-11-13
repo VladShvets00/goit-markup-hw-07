@@ -1,0 +1,60 @@
+/* 
+===============
+секція про нас
+===============
+ */
+.about {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.about__list {
+  display: flex;
+  /* align-items: stretch; */
+}
+.about__title {
+  color: var(--secondary-txt-cl);
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  /* justify-content: center; */
+  margin-bottom: 10px;
+}
+.about__item {
+  display: block;
+  margin-right: 30px;
+  width: 270px;
+  align-items: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.about__icon {
+  width: 270px;
+  height: 120px;
+  /* padding-top: 25px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-left: 100px;  */
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__text {
+  color: var(--main-txt-cl);
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.72;
+  letter-spacing: 0.42px;
+}

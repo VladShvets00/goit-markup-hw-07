@@ -1,0 +1,137 @@
+/* 
+===============
+Footer
+===============
+ */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--dark-bg-cl);
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 28px;
+
+  font-family: var(--secondary-font);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.78px;
+
+  color: var(--accent-cl);
+}
+
+.main-address {
+  color: var(--title-txt-cl);
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
+}
+
+.address-list {
+  margin-top: 12px;
+}
+.address-item {
+  margin-bottom: 12px;
+}
+
+.address-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: var(--main-font);
+  font-weight: 400;
+  letter-spacing: 0.42px;
+  line-height: 1.14;
+  font-style: normal;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--title-txt-cl);
+  }
+}
+
+.title-footer {
+  color: var(--title-txt-cl);
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-content:not(:last-child) {
+  margin-right: 70px;
+}
+
+.footer-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon {
+  fill: var(--title-txt-cl);
+}
+
+.footer__logo-white {
+  color: var(--title-txt-cl);
+}
+
+/* footer form */
+.footer-form {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
+
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  outline: transparent;
+  color: var(--title-txt-cl);
+  background: rgba(33, 150, 243, 0);
+}
+
+.form-btn-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px;
+  height: 50px;
+
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.icon-send {
+  margin-left: 10px;
+}
+
+.form-content {
+  margin-left: 23px;
+}
